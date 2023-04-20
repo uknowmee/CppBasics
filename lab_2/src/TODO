@@ -1,0 +1,19 @@
+
+Zadanie 1
+Proszę zaimplementować dwie klasy: Square oraz Circle.
+Należy wyposażyć klasy w atrybuty pozwalające na obliczenie pola oraz obwodu.
+Klasy powinny posiadać metody pozwalające wyliczyć: pole oraz obwód.
+Należy pamiętać o użyciu odpowiednich modyfikatorów dostępu do atrybutów oraz metod.
+
+
+Zadanie 2
+Do klas Square oraz Circle proszę zaimplementować konstruktory, konstruktory kopiujące oraz destruktory.
+Proszę o dodanie logowania do konstruktorów oraz destruktorów np.: 'Object Square created', 'Object Square destroyed'.
+
+Proszę o przetestowanie jakie oraz kiedy będą pojawiać się logi w zależności od utworzenie instancji klasy na stosie oraz stercie.
+
+
+Zadanie 3
+Proszę do klasy Square dodać statyczne pole którego zadaniem jest przechowywanie ilości utworzonych instancji klasy Square.
+
+Do klasy Circle proszę dodać statyczną metodę zwracającą wartość liczby PI.

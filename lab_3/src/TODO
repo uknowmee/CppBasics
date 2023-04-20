@@ -1,0 +1,28 @@
+Pytania:
+
+    Co to jest destruktor?
+    Co to jest atrybut/pole klasy?
+    Co to jest statyczne pole klasy?
+    Co to jest metoda klasy?
+    Co oznacza taka deklaracja metody klasy? void dump() const; (Dawid Słomnicki)
+    Jak zaincjalizować atrybut klasy która jest referencją? (Marcin Kosiba)
+    Kiedy domyślny konstruktor kopiujący jest wystarczający a kiedy powinniśmy napisać własny?
+
+
+
+zad. 1)
+ok-Proszę zaimplementować klasę Drawing (obrazek).
+??-Obrazek ma składać się z jednego Kwadratu (klasa Square) oraz z jednego Koła (klasa Circle) - dwa wskaźniki.
+ok-Obrazek posiada atrybuty określające stały rozmiar płótna: szerokość I wysokość (20x20).
+ok-Długość boku Kwadratu na Obrazku wynosi 5, promień Koła na Obrazku wynosi 5.
+ok-Kwadrat oraz Koło posiadają współrzędne (pozycję) na obrazku (x, y).
+ok-Kwadrat na Obrazku znajduję się w punkcie (5, 5), natomiast Koło na Obrazku jest punkcie (10, 10).
+ok-Obrazek może zostać skopiowany - będą dwa osobne obrazki. Obraz może zostać usunięty.
+ok-Obrazek jest odpowiedzialny za Kwadrat i Koło.
+ok-Obrazek dostarcza metodę wypisująca wszystkie informacje o sobie i o figurach Kwadrat i Koło.
+
+
+
+
+Podpowiedzi: kompozycja vs agregacja, klasy zagnieżdżone (wewnętrzne),
+private, protected, kopiowanie obiektów (płytkie głębokie), zarządzanie pamięcią

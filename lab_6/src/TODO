@@ -1,0 +1,33 @@
+    // 1 // print all available info
+    // std::cout << *drawing << std::endl;
+
+    // 2 // change the drawing dimensions---podaj wysokosc i szerokosc nowego obrazka
+    // std::cin >> *drawing;
+
+    // 3 // comparison---ilosc,typ,pole
+    // if (*drawing == *drawing2) {
+    //  std::cout << "Drawing are equal" << std::endl;
+    // }
+
+    // 4 // sort the figures based on area (compare pointer by the dereference)---
+    // uncoment also PComp function
+    // drawing->getList().sort(PComp);
+
+    // 5 // return the n'th element in the figure list
+    // std::cout << (*drawing)[0] << std::endl;
+
+    // 6 // return the n'th element in the figure list---operator subskrypcji
+    // std::cout << (*drawing)(0);
+
+    // 7 // add figures from drawing2 to drawing
+    // *drawing += *drawing2; //
+    // *drawing = *drawing + *drawing2;
+
+    // 8 //add copy assigment operator
+    // *drawing = *drawing2;
+
+    // 9 // fix the memory leak
+
+    // 10 // clean the code
+
+    https://en.cppreference.com/w/cpp/language/operators

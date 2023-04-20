@@ -1,0 +1,27 @@
+Proszę utworzyć nową gałąź o nazwie lab_11 
+	Wychodzimy z gałęzi lab_10 
+	Proszę zmienić nazwę projektu na lab_11 ( zmiany w nazwie folderu, CMakeLists.txt
+		oraz src/CMakeLists.txt ) 
+Proszę zrobić commit i push na gałąź lab_11 
+Proszę utworzyć Pull Request lab_11 -> master 
+W katalogu lab_11 
+	Proszę założyć katalog build 
+	Proszę przejść do katalogu build wykonać polecenie: cmake ../ 
+	Następnie polecenie: make 
+	Następnie polecenie: make run_lab_11 
+W Grupa 1b -> Files -> Lab_11 jest main.cpp - proszę skopiować i użyć na zajęciach. 
+Na koniec zajęć tworzymy pull request: lab_11 -> master 
+
+ 
+
+Proszę zaimplementować: 
+	Konstruktor przenoszący. 
+	Przenoszący operator= 
+	VectoredList operator+(const VectoredList &rhs) const;
+		- połączenie dwóch kontenerów w jeden. 
+	Przenosząca metodę assign, która z std::vector<string> przeniesie wszystkie
+		elementy do kontenera VectoredList.
+
+
+
+10str+

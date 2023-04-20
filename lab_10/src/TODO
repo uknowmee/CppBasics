@@ -1,0 +1,44 @@
+Wykład: Proszę napisać klasę VectoredList, która będzie formą pośrednią między Vectorem i Listą.
+
+Pośredniość będzie polegać na tym, że mamy bloki pamięci po N elementów,
+z których każdy blok wskazuje na następny i poprzedni blok.
+Rozmiar bloku powinien być ustawiony stałą czasu kompilacji N na wartość 10.
+
+1. Klasa VectoredList musi zawierać wskaźniki na składowe:
+    -head,
+    -tail,
+    -size (ilość bloków),
+    -capacity (ile się zmieści do aktualnie posiadanych bloków).
+
+2. Proszę o zaimplementowanie klasy wewnętrznej: Bucket. Klasa Bucket powinna posiadać
+    -wskaźniki:
+        na poprzedni i
+        następny element,
+    -informacje o ilości elementów,
+    -a także wyżej wspomniane N,
+    -typem agregowanym powinien być std::string.
+
+
+
+Proszę również o implementację:
+    -Metody push_back - wrzucająca element na koniec wszystkich elementów,w razie czego powinno alokować nowy kubełek.
+    -Operatora operator[] - zwracający referencje do elementu o danym indeksie z odpowiedniego kubełka:s
+        TESTY: Proszę tak dodać 101 elementów i przejść od odwrotnej strony po elementach.
+    -Iteratora, będącego klasą wewnętrzną, który by umożliwiał przeglądanie elementów (metody: !=, operator*, operator++).
+    Oraz proszę pamiętać o metodach begin() i end() zwracających iterator.
+        TEST: VectoredList v(...);
+        for (auto& element : v)
+            cout << v << endl;
+    -Metody erase -  przyjmuje iterator i usuwa wskazany element, przesuwając kolejne elementy o jedną pozycje w lewo
+        erase, która przyjmuje parę iteratorów i usuwa cały zakres
+        TEST: dodać 22 elementów, usunąć trzeci i wyświetlić
+    -Operator operator=, który będzie kopiował głęboko.
+        TEST: VectoredList v(...);
+        {
+            VectoredList v2(...);
+            v = v2;
+        }
+
+Proszę pamiętać o zwalnianiu pamięci, odpowiednich ustawieniach w konstruktorze.
+Można dodać dodatkowe metody, przydane w użyciu.
+

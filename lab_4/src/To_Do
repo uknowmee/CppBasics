@@ -1,0 +1,30 @@
+Pytania:
+
+        Co to jest dziedziczenie w programowaniu obiektowym?
+        Jakie mamy prawa dostępu w klasie pochodnej do elementów klasy bazowej?
+        Co to jest vtable (virtual table)? Co to jest vptr (virtual pointer):
+            https://pabloariasal.github.io/2017/06/10/understanding-virtual-tables/
+        Co robi przy metodzie: override?
+        Co to jest wirtualny destruktor?
+        Dlaczego mamy tutaj pułapkę? - string b();
+        Co to jest polimorfizm?
+        Co to są funkcję wirtualne w C++?
+        Co to jest wczesne oraz późne wiązanie w C++ (early and late binding)?
+        Co i dlaczego zostanie wypisane na ekran?
+
+
+Constructor pitfalls: (https://www.horstmann.com/cpp/pitfalls.html)
+
+
+Zadanie:
+
+    1. Obrazek (klasa Drawing) zawiera listę Figur:
+                Figura-(klasa Figure) przechowywaną jako listę wskaźników.
+                Kwadrat (klasa Square) oraz Koło (klasa Cicrle) są rodzajem figur.
+        Każda Figura  ma współrzędne na Obrazku.
+
+    2. Użytkownik (Malarz) Obrazka może rysować na nim dowolną ilość różnych Figur również poprzez kopiowanie.
+    Figury na obrazku mogą być rozmieszczone w dowolnych miejscach.
+    Obrazek ma zdefiniowną przez Malarza wielkość.
+    Malarz Obrazka może usuwać (używać gumki do mazania) figury oraz zmieniać ich położenie.
+    Malarz ma możliwość wylistowania elementów Obrazka.

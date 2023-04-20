@@ -1,0 +1,40 @@
+Przeciążanie operatorów w C++
+
+    Zaimplementuj klasę TwoDimensionMatrix odzwierciedlajaca macierz 2*2, zawierającą:
+        a) tablice typu int oraz size (=2)
+        b) konstruktory:
+            *) bezargumentowy - zerujący wszystkie elementy
+            *) kopiujący
+                #) przyjmujący jako argument tablicę (const int matrix[size][size]) i kopiujący z niej wartości
+        c) funkcja składowa do dostępu do elementów (get()) zwracająca odpowiedni element
+        d) funkcja zwracająca size o nazwie (getSize()), proponuję aby była static constexpr
+
+
+
+    Uzupełnij klasy o następujące operacje zdefiniowane poprzez przeciążenie operatorów:
+        a) operator przypisania kopiujący (głęboko): operator=()
+        b) operatory wypisywania do strumienia (<<) (funkcja zewn.)
+           - forma dowolna, byleby wszystkie elementy były w strumieniu
+        c) operatory arytmetyczne (stosujące odpowiednie operacje na macierzach):
+            *) TwoDimensionMatrix operator+(const TwoDimensionMatrix& matrix1, const TwoDimensionMatrix& matrix2); // jako funkcja globalna
+            *) TwoDimensionMatrix& operator*=(int number); // metoda klasy
+            *) zadany operator logiczny (metoda klasy),
+                #) TwoDimensionMatrix operator&&(const TwoDimensionMatrix& matrix) const;
+            *) operator tablicowy dostający się po indeksie do pierwszego z wymiarów tablicy (metoda klasy), proszę pamiętać o wersji const
+                #) int* operator[](size_t i);
+            *) operator konwersji do size_t, zwracający to co getSize() (metoda klasy),
+                #) https://docs.microsoft.com/pl-pl/cpp/cpp/user-defined-type-conversions-cpp?view=msvc-160
+        d) Deklaracja klasy i funkcji globalnych powinna się znaleźć w pliku "matrix.h",
+           natomiast definicje funkcji zewnętrznych i metod klas w pliku źródłowym "matrix.cpp"
+
+
+
+    Uwaga:
+        a) Wszystkie atrybuty powinny być prywatne, konstruktory i metody - publiczne,
+        b) metody większe niż 1-linijkowe powinny być zadeklarowane w klasie, zdefiniowane poza klasą,
+        c) obiekty typów klasowych powinny być w miarę możliwości przekazywane w argumentach funkcji przez referencję,
+        d) proszę też stosować słówko "const" w odpowiednich miejscach.
+
+
+"operator logiczny i ma mowic gdzie sie zgadzaja"
+https://docs.microsoft.com/pl-pl/cpp/cpp/logical-and-operator-amp-amp?view=msvc-160

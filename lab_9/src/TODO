@@ -1,0 +1,7 @@
+6.
+Write a function: float division(int *num, int den)
+write your own expection class(es) to handle two kinds of exceptions
+throw when num is null or x == 0
+provide and extra info about the exception (message, line, function name,
+info) e.g throw myexception("msg", __FILE__,
+catch exceptions
